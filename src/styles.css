@@ -1,1 +1,48 @@
 /* You can add global styles to this file, and also import other style files */
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+/* Colore testo tab (attive e non) */
+.mat-mdc-tab .mdc-tab__text-label {
+  color: black !important;
+}
+
+/* Colore tab attiva */
+.mat-mdc-tab.mat-mdc-tab--active .mdc-tab__text-label {
+  color: black !important;
+}
+
+/* Colore underline (indicatore attivo) */
+.mat-mdc-tab .mdc-tab-indicator__content--underline {
+  background-color: hsl(330, 100%, 45%) !important;
+}
+
+.mat-mdc-menu-panel {
+  background-color: rgba(255, 255, 255, 0.85) !important;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+  border-radius: 12px;
+  color: hsl(330, 100%, 50%) !important;
+}
+
+.mat-mdc-menu-item .mat-icon {
+  color: hsl(330, 100%, 45%) !important;
+}
+
+.mat-mdc-menu-item:hover .mat-icon {
+  background-color: rgba(255, 0, 100, 0.1) !important;
+  border-radius: 4px;
+}
+
+.mat-mdc-menu-item .mat-mdc-menu-item-text {
+  color: hsl(330, 100%, 45%) !important;
+}
+
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

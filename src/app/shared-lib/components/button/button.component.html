@@ -1,0 +1,25 @@
+<a
+  *ngIf="isLink"
+  mat-flat-button
+  [href]="href"
+  [ngClass]="[variant === 'light' ? 'light-style' : 'solid-style']"
+  target="_blank"
+  rel="noopener noreferrer"
+  class="contact-btn"
+>
+  <i *ngIf="icon" [class]="icon"></i>
+  <!-- <mat-icon *ngIf="icon">{{ icon }}</mat-icon> -->
+  {{ text }}
+</a>
+
+<button
+  *ngIf="!isLink"
+  mat-flat-button
+  type="button"
+  [ngClass]="[variant === 'light' ? 'light-style' : 'solid-style']"
+  class="contact-button"
+>
+  <i *ngIf="icon" [class]="icon"></i>
+  <!-- <mat-icon *ngIf="icon">{{ icon }}</mat-icon> -->
+  {{ text }}
+</button>

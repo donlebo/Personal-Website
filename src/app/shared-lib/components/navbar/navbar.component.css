@@ -1,0 +1,53 @@
+.app-toolbar {
+  display: flex;
+  align-items: center;
+  padding: 0 16px;
+  background-color: transparent; /* trasparente */
+  color: hsl(330, 100%, 50%); /* fucsia acceso per il testo */
+}
+
+.app-title {
+  font-size: 20px;
+  font-weight: 500;
+  color: hsl(330, 100%, 50%); /* fucsia acceso */
+}
+
+.spacer {
+  flex: 1 1 auto;
+}
+
+/* Nasconde solo su schermi grandi */
+.hide-on-desktop {
+  display: inline-flex;
+}
+
+/* Nasconde su tablet/mobile */
+.desktop-only {
+  display: none;
+}
+
+/* A partire da 1024px in su (desktop) */
+@media (min-width: 1024px) {
+  .desktop-only {
+    display: inline-flex;
+    align-items: center;
+    color: hsl(330, 100%, 50%);
+  }
+
+  .hide-on-desktop {
+    display: none;
+  }
+}
+
+/* Bottoni o link nella toolbar */
+.app-toolbar button,
+.app-toolbar a {
+  color: hsl(330, 100%, 50%);
+  transition: color 0.3s ease;
+}
+
+.app-toolbar button:hover,
+.app-toolbar a:hover {
+  color: hsl(330, 100%, 40%); /* fucsia un po' più scuro */
+  cursor: pointer;
+}

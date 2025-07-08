@@ -1,0 +1,52 @@
+.contact-buttons {
+  text-align: center;
+  padding: 2rem 1rem;
+  padding-bottom: 6rem;
+
+  .section-title {
+    font-size: 2rem;
+    color: black;
+    margin-bottom: 0.3rem;
+  }
+
+  .section-subtitle {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 2rem;
+    display: block;
+  }
+
+  .button-group {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+
+    @media (min-width: 768px) {
+      flex-direction: row;
+      justify-content: center;
+
+    }
+  }
+}
+
+/* Stile scroll button senza stile link */
+.home__scroll-button.no-link-style {
+  all: unset;
+  display: inline-flex;
+  align-items: center;
+  cursor: pointer;
+  color: inherit;
+  font-size: 1rem;
+  color: hsla(330, 100%, 45%, 0.85);
+}
+
+/* Icone e testo allineati verticalmente */
+.home__scroll-button.no-link-style i,
+.home__scroll-button.no-link-style mat-icon {
+  font-size: 1.2rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+}

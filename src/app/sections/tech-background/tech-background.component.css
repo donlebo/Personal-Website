@@ -1,0 +1,46 @@
+.section__title {
+  padding-top: 5rem;
+  font-size: 2rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 0.25rem;
+}
+
+.section__subtitle {
+  display: block;
+  font-size: 1rem;
+  color: #666;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+/* Sfondo accordion scuro trasparente */
+.mat-expansion-panel,
+.mat-expansion-panel-header {
+  background-color: hsla(330, 100%, 45%, 0.85) !important; /* grigio scuro semitrasparente */
+  color: white !important;
+}
+
+/* Titolo e descrizione */
+.mat-expansion-panel-header .mat-panel-title,
+.mat-expansion-panel-header .mat-panel-description {
+  color: white !important;
+}
+
+/* Freccetta */
+.mat-expansion-panel-header .mat-expansion-indicator {
+  color: white !important;
+}
+
+/* Chip */
+mat-chip {
+  color: #222 !important;               /* testo scuro dentro chip */
+  background-color: transparent !important; /* chip bianco sporco */
+  border-radius: 16px;
+  font-weight: 500;
+}
+
+/* Margini tra accordion */
+.mat-expansion-panel {
+  margin: 0.5rem 0;
+}

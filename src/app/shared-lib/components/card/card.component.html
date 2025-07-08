@@ -1,0 +1,30 @@
+<mat-card class="qualification-item">
+  <mat-card-title>{{ title }}</mat-card-title>
+  <mat-card-subtitle class="subtitle">{{ subtitle }}</mat-card-subtitle>
+  <mat-card-content>
+    <p>
+      <mat-icon>calendar_today</mat-icon>
+      {{ date }}
+    </p>
+  </mat-card-content>
+  <mat-card-actions class="preview-action-row">
+    <button
+      *ngIf="previewAction == true"
+      mat-icon-button
+      aria-label="Show more"
+      (click)="previewClick.emit()"
+    >
+      Show more
+      <mat-icon>visibility</mat-icon>
+    </button>
+    <button
+      *ngIf="previewAction == false"
+      mat-icon-button
+      disabled="true"
+      aria-label="Show more"
+      (click)="previewClick.emit()"
+    >
+      {{ text }}
+    </button>
+  </mat-card-actions>
+</mat-card>

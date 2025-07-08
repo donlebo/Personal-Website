@@ -1,0 +1,40 @@
+<section class="contact-buttons" id="contacts">
+  <h2 class="section-title">Contact Me</h2>
+  <span class="section-subtitle">Get in touch</span>
+
+  <div class="button-group">
+    <app-button
+      [isLink]="true"
+      icon="uil uil-phone"
+      href="tel:+393343819116"
+      text="Call me"
+      variant="light"
+    ></app-button>
+
+    <app-button
+      [isLink]="true"
+      icon="uil uil-whatsapp"
+      href="https://wa.me/+393343819116?text=Hi, I found your contact through your landing page. I would like more information."
+      text="Send message"
+      variant="light"
+    ></app-button>
+
+    <app-button
+      [isLink]="true"
+      icon="uil uil-envelope"
+      href="mailto:donato.bello101@gmail.com"
+      text="Send email"
+      variant="light"
+    ><i class="uil uil-whatsapp"></i></app-button>
+  </div>
+  <div class="home__scroll" style="padding-top: 2rem">
+    <button class="home__scroll-button no-link-style" (click)="goUp()">
+      <i class="uil uil-mouse-alt home__scroll-mouse"></i>
+      <span class="home__scroll-name"> Go up</span>
+      <i class="uil uil-arrow-up home__scroll-arrow"></i>
+      <mat-icon>
+        <span class="material-symbols-outlined"></span>
+      </mat-icon>
+    </button>
+  </div>
+</section>

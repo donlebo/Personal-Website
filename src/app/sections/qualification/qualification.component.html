@@ -1,0 +1,37 @@
+<section class="section" id="qualifications">
+  <h2 class="section__title">Qualifications</h2>
+  <span class="section__subtitle">My personal journey</span>
+  <app-tab [tabs]="tabLabels" [(selectedIndex)]="selectedIndex"> </app-tab>
+  <div class="qualification-section">
+    <ng-container [ngSwitch]="selectedIndex">
+      <ng-container *ngSwitchCase="0">
+        <app-card
+          *ngFor="let education of educationCards"
+          [title]="education.title"
+          [subtitle]="education.subtitle"
+          [date]="education.dateText"
+          [text]="education.text"
+          [previewAction]="education.previewAvailable"
+          (previewClick)="openPreview(education)"
+        ></app-card>
+      </ng-container>
+
+      <ng-container *ngSwitchCase="1">
+        <app-card
+          *ngFor="let work of workCards"
+          [title]="work.title"
+          [subtitle]="work.subtitle"
+          [date]="work.dateText"
+          [previewAction]="work.previewAvailable"
+          (previewClick)="openPreview(work)"
+        ></app-card>
+      </ng-container>
+    </ng-container>
+
+    <app-preview-dialog
+      [visible]="selectedPreviewCard !== null"
+      [card]="selectedPreviewCard"
+      (close)="closePreview()"
+    ></app-preview-dialog>
+  </div>
+</section>

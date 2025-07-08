@@ -1,0 +1,117 @@
+/* Contenitore principale */
+.home__container {
+  max-width: 1024px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+/* Layout mobile: colonna (img sopra, testo sotto) */
+.home__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+/* Layout desktop: row (testo sinistra, immagine destra) */
+@media screen and (min-width: 768px) {
+  .home__content {
+    flex-direction: row-reverse; /* immagine a destra */
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .home__data {
+    text-align: left;
+    flex: 1;
+  }
+
+  .home__img {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+  }
+}
+
+/* SVG */
+.home__blob {
+  width: 300px;
+  height: auto;
+}
+
+.home__blob-img {
+  width: 170px;
+  height: 180px;
+  object-fit: cover;
+}
+
+/* Testo */
+.home__title {
+  font-size: 2.3rem;
+  margin-bottom: 0.3rem;
+}
+
+.home__subtitle {
+  font-size: 1.3rem;
+  color: hsl(330, 100%, 45%);
+  margin-bottom: 1rem;
+}
+
+.home__description {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #333;
+  max-width: 600px;
+}
+
+/* Contenitore bottone + scroll */
+.contact-scroll-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+/* Layout desktop: affiancati */
+@media screen and (min-width: 768px) {
+  .contact-scroll-container {
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+  }
+}
+
+/* Stile scroll button senza stile link */
+.home__scroll-button.no-link-style {
+  all: unset;
+  display: inline-flex;
+  align-items: center;
+  cursor: pointer;
+  color: inherit;
+  font-size: 1rem;
+  color: hsla(330, 100%, 45%, 0.85);
+}
+
+/* Icone e testo allineati verticalmente */
+.home__scroll-button.no-link-style i,
+.home__scroll-button.no-link-style mat-icon {
+  font-size: 1.2rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+}
+
+.button-group {
+  display: flex;
+  flex-direction: column !important;
+  gap: 1rem;
+  align-items: center;
+
+  @media (min-width: 768px) {
+    flex-direction: row;
+    justify-content: center;
+
+  }
+}

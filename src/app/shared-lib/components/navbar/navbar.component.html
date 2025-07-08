@@ -1,0 +1,41 @@
+<mat-toolbar id="navbar" color="primary" class="app-toolbar">
+  <!-- My App: sempre visibile, ma si riposiziona -->
+  <span class="app-title">DB</span>
+
+  <span class="spacer"></span>
+
+  <!-- Desktop actions -->
+  <div class="desktop-actions desktop-only">
+    <button mat-button (click)="scrollToSection('skills')">
+      Skills & Qualifications
+    </button>
+  </div>
+
+  <!-- Mobile/tablet menu icon -->
+  <button
+    mat-icon-button
+    class="menu-button hide-on-desktop"
+    [matMenuTriggerFor]="menu"
+    aria-label="Menu"
+  >
+    <mat-icon>menu</mat-icon>
+  </button>
+  <mat-menu #menu="matMenu">
+    <button mat-menu-item (click)="scrollToSection('about')">
+      <mat-icon>person</mat-icon>
+      <span>About me</span>
+    </button>
+    <button mat-menu-item (click)="scrollToSection('skills')">
+      <mat-icon>work</mat-icon>
+      <span>Skills</span>
+    </button>
+    <button mat-menu-item (click)="scrollToSection('qualifications')">
+      <mat-icon>build</mat-icon>
+      <span>Qualifications</span>
+    </button>
+    <button mat-menu-item (click)="scrollToSection('contacts')">
+      <mat-icon>email</mat-icon>
+      <span>Contacts</span>
+    </button>
+  </mat-menu>
+</mat-toolbar>

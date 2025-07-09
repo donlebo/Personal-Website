@@ -8,10 +8,9 @@ describe('PreviewDialogComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [PreviewDialogComponent]
-    })
-    .compileComponents();
-    
+      imports: [PreviewDialogComponent],
+    }).compileComponents();
+
     fixture = TestBed.createComponent(PreviewDialogComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();

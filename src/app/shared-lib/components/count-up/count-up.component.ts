@@ -26,7 +26,10 @@ export class CountUpComponent implements OnInit, AfterViewInit, OnDestroy {
   private animationStarted = false;
   private intervalId: any;
 
-  constructor(private el: ElementRef, private cdr: ChangeDetectorRef) {}
+  constructor(
+    private el: ElementRef,
+    private cdr: ChangeDetectorRef
+  ) {}
 
   ngOnInit() {}
 

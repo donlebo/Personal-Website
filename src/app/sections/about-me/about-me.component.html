@@ -2,24 +2,29 @@
   <h2 class="section__title">{{ introduction?.title }}</h2>
   <span class="section__subtitle">{{ introduction?.subtitle }}</span>
   <div class="about__container container grid">
-    <svg class="home__blob" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet">
-  <mask id="mask0" mask-type="alpha">
-    <circle cx="100" cy="100" r="85" fill="white" />
-  </mask>
+    <svg
+      class="home__blob"
+      viewBox="0 0 200 200"
+      xmlns="http://www.w3.org/2000/svg"
+      preserveAspectRatio="xMidYMid meet"
+    >
+      <mask id="mask0" mask-type="alpha">
+        <circle cx="100" cy="100" r="85" fill="white" />
+      </mask>
 
-  <g mask="url(#mask0)">
-    <circle cx="100" cy="100" r="75" fill="hsl(330, 100%, 50%)" />
-    <image
-  class="home__blob-img"
-  x="15"
-  y="15"
-  width="170"
-  height="170"
-  xlink:href="assets/img/abt.png"
-  preserveAspectRatio="xMidYMid slice"
-/>
-  </g>
-</svg>
+      <g mask="url(#mask0)">
+        <circle cx="100" cy="100" r="75" fill="hsl(330, 100%, 50%)" />
+        <image
+          class="home__blob-img"
+          x="15"
+          y="15"
+          width="170"
+          height="170"
+          xlink:href="assets/img/abt.png"
+          preserveAspectRatio="xMidYMid slice"
+        />
+      </g>
+    </svg>
     <div class="about__data">
       <p class="about__description">
         {{ introduction?.text }}
@@ -83,11 +88,7 @@
           aria-label="LinkedIn"
           class="about__icon-link"
         >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            class="about__icon-svg"
-            viewBox="0 0 16 16"
-          >
+          <svg xmlns="http://www.w3.org/2000/svg" class="about__icon-svg" viewBox="0 0 16 16">
             <path
               d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0
               16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175

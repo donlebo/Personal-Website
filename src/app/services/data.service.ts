@@ -4,6 +4,7 @@ import {
   Introduction,
   Presentation,
   QualificationCard,
+  Section,
   SkillCategory,
 } from './data.model';
 
@@ -49,17 +50,10 @@ export class DataService {
   getWorkQualifications(): QualificationCard[] {
     return [
       {
-        title: 'Upskill 4.0 project - Maize.plus',
-        subtitle: 'Steve Jobs Academy - H-FARM',
-        dateText: '09/2021 • 12/2021',
-        text: 'Working in a team and using the Design Thinking methodology we were able to develop a mockup that illustrated areas for improvement for a company. We have worked on the five phases that this methodology provides, namely: Empathy, Definition, Ideation, Prototyping and Testing',
-        previewAvailable: true,
-      },
-      {
-        title: 'Curricular internship',
-        subtitle: 'NIGITHOR',
-        dateText: '05/2022 • 10/2022',
-        text: 'Acquired skills: HTML - Postman - Angular - JDBC - Oracle - SQL - Development Swagger - Spring Framework - OOP - Java - English Language - Ionic Framework',
+        title: 'Angular Developer',
+        subtitle: 'ALTEN ITALIA',
+        dateText: '07/2023 • PRESENT',
+        text: 'Angular developer. Within the CMP2 team at one of our clients, Aruba, where we work on the new CMP (Cloud Management System) platform. Every day we face stimulating challenges and help create innovative solutions for managing cloud services.',
         previewAvailable: true,
       },
       {
@@ -70,10 +64,17 @@ export class DataService {
         previewAvailable: true,
       },
       {
-        title: 'Angular Developer',
-        subtitle: 'ALTEN ITALIA',
-        dateText: '07/2023 • PRESENT',
-        text: 'Angular developer. Within the CMP2 team at one of our clients, Aruba, where we work on the new CMP (Cloud Management System) platform. Every day we face stimulating challenges and help create innovative solutions for managing cloud services.',
+        title: 'Curricular internship',
+        subtitle: 'NIGITHOR',
+        dateText: '05/2022 • 10/2022',
+        text: 'Acquired skills: HTML - Postman - Angular - JDBC - Oracle - SQL - Development Swagger - Spring Framework - OOP - Java - English Language - Ionic Framework',
+        previewAvailable: true,
+      },
+      {
+        title: 'Upskill 4.0 project - Maize.plus',
+        subtitle: 'Steve Jobs Academy - H-FARM',
+        dateText: '09/2021 • 12/2021',
+        text: 'Working in a team and using the Design Thinking methodology we were able to develop a mockup that illustrated areas for improvement for a company. We have worked on the five phases that this methodology provides, namely: Empathy, Definition, Ideation, Prototyping and Testing',
         previewAvailable: true,
       },
     ];
@@ -132,38 +133,52 @@ export class DataService {
         title: 'FE',
         description: 'More than 3 years',
         skills: [
-          'HTML', 'CSS', 'Bootstrap', 'JavaScript', 'TypeScript',
-          'SASS', 'Angular', 'Ionic', 'React', 'React Native'
+          'HTML',
+          'CSS',
+          'Bootstrap',
+          'JavaScript',
+          'TypeScript',
+          'SASS',
+          'Angular',
+          'Ionic',
+          'React',
+          'React Native',
         ],
-        expanded: true
+        expanded: true,
       },
       {
         icon: 'storage',
         title: 'BE',
         description: 'Basic knowledge',
-        skills: [
-          'C', 'Java', 'Springboot', 'PHP', 'Node.js',
-          'Python', 'Swagger', 'C#'
-        ]
+        skills: ['C', 'Java', 'Springboot', 'PHP', 'Node.js', 'Python', 'Swagger', 'C#'],
       },
       {
         icon: 'dns',
         title: 'Data',
         description: 'Basic knowledge',
-        skills: ['MySQL', 'PostgreSQL', 'Oracle']
+        skills: ['MySQL', 'PostgreSQL', 'Oracle'],
       },
       {
         icon: 'sports_esports',
         title: 'Game',
         description: 'Basic knowledge',
-        skills: ['Unity', 'Blender']
+        skills: ['Unity', 'Blender'],
       },
       {
         icon: 'brush',
         title: 'UI',
         description: 'More than 3 years',
-        skills: ['Photoshop', 'Canva', 'Figma']
-      }
+        skills: ['Photoshop', 'Canva', 'Figma'],
+      },
+    ];
+  }
+
+  getSections(): Section[] {
+    return [
+      { id: 'about', label: 'About me', icon: 'person' },
+      { id: 'skills', label: 'Skills', icon: 'work' },
+      { id: 'qualifications', label: 'Qualifications', icon: 'build' },
+      { id: 'contacts', label: 'Contacts', icon: 'email' },
     ];
   }
 }

@@ -1,0 +1,8 @@
+/dist
+/node_modules
+/*.js
+/*.json
+/*.lock
+/*.log
+/*.svg
+/*.png

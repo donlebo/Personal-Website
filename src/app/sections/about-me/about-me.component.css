@@ -85,7 +85,6 @@
   margin-top: 2rem;
 }
 
-
 .about__icon-link {
   display: flex;
   align-items: center;
@@ -118,8 +117,8 @@
   transition: background-color 0.3s ease;
 
   &:hover {
-      transform: scale(1.1);
-    }
+    transform: scale(1.1);
+  }
 }
 
 .about__container {
@@ -132,7 +131,6 @@
   gap: 1.5rem;
   align-items: center;
 }
-
 
 @media screen and (min-width: 768px) {
   .about__container {

@@ -1,12 +1,16 @@
 /* You can add global styles to this file, and also import other style files */
 
-html, body {
+html,
+body {
   height: 100%;
   margin: 0;
   padding: 0;
   overflow-x: hidden;
 }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+body {
+  margin: 0;
+  font-family: Roboto, 'Helvetica Neue', sans-serif;
+}
 /* Colore testo tab (attive e non) */
 .mat-mdc-tab .mdc-tab__text-label {
   color: black !important;
@@ -43,6 +47,11 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
   color: hsl(330, 100%, 45%) !important;
 }
 
-
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: Roboto, 'Helvetica Neue', sans-serif;
+}

@@ -38,3 +38,9 @@ export interface SkillCategory {
   skills: string[];
   expanded?: boolean;
 }
+
+export interface Section {
+  id: string;
+  label: string;
+  icon?: string;
+}

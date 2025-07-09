@@ -8,10 +8,9 @@ describe('CountUpComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [CountUpComponent]
-    })
-    .compileComponents();
-    
+      imports: [CountUpComponent],
+    }).compileComponents();
+
     fixture = TestBed.createComponent(CountUpComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();

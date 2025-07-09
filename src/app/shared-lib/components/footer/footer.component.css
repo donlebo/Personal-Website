@@ -13,13 +13,13 @@
     justify-items: start;
     text-align: left;
     grid-template-areas:
-      "branding socials"
-      "links links";
+      'branding socials'
+      'links links';
 
     @media (min-width: 768px) {
       max-width: 1200px;
       grid-template-columns: 1fr 2fr 1fr;
-      grid-template-areas: "branding links socials";
+      grid-template-areas: 'branding links socials';
       align-items: center;
       text-align: left;
       justify-items: stretch;

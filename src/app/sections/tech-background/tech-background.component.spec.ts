@@ -8,10 +8,9 @@ describe('TechBackgroundComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [TechBackgroundComponent]
-    })
-    .compileComponents();
-    
+      imports: [TechBackgroundComponent],
+    }).compileComponents();
+
     fixture = TestBed.createComponent(TechBackgroundComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();

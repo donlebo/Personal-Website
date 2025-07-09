@@ -12,7 +12,7 @@
 </div>
  -->
 
- <div *ngIf="visible" class="overlay" (click)="onOverlayClick()">
+<div *ngIf="visible" class="overlay" (click)="onOverlayClick()">
   <mat-card class="qualification-item modal-card" (click)="onCardClick($event)">
     <mat-card-title *ngIf="card?.title">{{ card?.title }}</mat-card-title>
     <p *ngIf="card?.subtitle">{{ card?.subtitle }}</p>

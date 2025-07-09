@@ -3,11 +3,7 @@
     <div class="home__content">
       <!-- IMMAGINE / SVG -->
       <div class="home__img">
-        <svg
-          class="home__blob"
-          viewBox="0 0 200 187"
-          xmlns="http://www.w3.org/2000/svg"
-        >
+        <svg class="home__blob" viewBox="0 0 200 187" xmlns="http://www.w3.org/2000/svg">
           <mask id="mask0" mask-type="alpha">
             <path
               d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 165.547
@@ -49,14 +45,9 @@
         <div class="contact-scroll-container">
           <app-button [text]="buttonContactText" (click)="openDialog()"></app-button>
           <div class="home__scroll">
-            <button
-              class="home__scroll-button no-link-style"
-              (click)="scrollTo('footer')"
-            >
+            <button class="home__scroll-button no-link-style" (click)="scrollTo('footer')">
               <i class="uil uil-mouse-alt home__scroll-mouse"></i>
-              <span class="home__scroll-name">{{
-                presentation?.scrollText
-              }}</span>
+              <span class="home__scroll-name">{{ presentation?.scrollText }}</span>
               <i class="uil uil-arrow-down home__scroll-arrow"></i>
               <!-- <mat-icon>
                 <span class="material-symbols-outlined">arrow_downward</span>
@@ -66,12 +57,7 @@
         </div>
       </div>
     </div>
-    <app-preview-dialog
-      *ngIf="showDialog"
-      [visible]="true"
-      [card]="null"
-      (close)="closeDialog()"
-    >
+    <app-preview-dialog *ngIf="showDialog" [visible]="true" [card]="null" (close)="closeDialog()">
       <div class="dialog-buttons">
         <div class="button-group">
           <app-button
@@ -96,7 +82,8 @@
             href="mailto:donato.bello101@gmail.com"
             text="Send email"
             variant="light"
-          ><i class="uil uil-whatsapp"></i></app-button>
+            ><i class="uil uil-whatsapp"></i
+          ></app-button>
         </div>
       </div>
     </app-preview-dialog>

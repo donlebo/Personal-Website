@@ -34,7 +34,7 @@
 
 /* Chip */
 mat-chip {
-  color: #222 !important;               /* testo scuro dentro chip */
+  color: #222 !important; /* testo scuro dentro chip */
   background-color: transparent !important; /* chip bianco sporco */
   border-radius: 16px;
   font-weight: 500;

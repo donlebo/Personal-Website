@@ -6,10 +6,30 @@
   color: hsl(330, 100%, 50%); /* fucsia acceso per il testo */
 }
 
-.app-title {
-  font-size: 20px;
-  font-weight: 500;
-  color: hsl(330, 100%, 50%); /* fucsia acceso */
+/* .custom-logo {
+  background-color: hsl(330, 100%, 50%);
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  border: none;
+}
+
+.logo-text {
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+} */
+
+.clickable-logo {
+  cursor: pointer;
+  height: 45px; /* o la dimensione che vuoi */
+  width: auto;
+  display: block;
+  user-select: none; /* opzionale, evita selezioni testuali */
 }
 
 .spacer {

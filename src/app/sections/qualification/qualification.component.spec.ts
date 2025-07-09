@@ -8,10 +8,9 @@ describe('QualificationComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [QualificationComponent]
-    })
-    .compileComponents();
-    
+      imports: [QualificationComponent],
+    }).compileComponents();
+
     fixture = TestBed.createComponent(QualificationComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
